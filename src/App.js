@@ -7,52 +7,27 @@ function App() {
   const [question, setQuestion] = useState("");
   const [content, setContent] = useState([]);
   const [load, setLoad] = useState(false);
-  const OPENAI_API_KEY = process.env.REACT_APP_OPENAI_API_KEY;
-  const CHAT_API_URL = 'https://api.openai.com/v1/chat/completions';
+  const CHAT_API_URL = 'https://be-chat-bot.vercel.app/';
 
-  const messages = [
-    {
-      role: "system",
-      content: "You are a helpful assistant."
-    }, 
-    {
-      role: "system",
-      content: "Only answer in 50 words or less."
-    }, 
-    {
-      role: "user",
-      content: question
-    }
-  ];
 
 
   const submit = () => {
     setLoad(true);
     const fetchData = async () => {
-      const data = await fetch(CHAT_API_URL,{
-        method: 'POST',
+      const data = await fetch(CHAT_API_URL+'?question='+question,{
+        method: 'get',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${OPENAI_API_KEY}`
         },
-        body: JSON.stringify({
-            messages: messages,
-            model: 'gpt-3.5-turbo'
-        })
       });
 
       // convert the data to json
       const response = await data.json();
-      const { choices } = response;
-      const { message } = choices.pop();
-      const { role, content } = message;
-    
-      const answer = role === "assistant" ? content : null;
 
       const arr = [
         {
           'question' : question,
-          'answer' : answer 
+          'answer' : response 
         }
       ];
       // set state with the result
@@ -96,7 +71,7 @@ function App() {
           onChange={(e) => setQuestion(e.target.value)}
         />
         <button onClick={submit} disabled={load && (question == '') ? true : false}>
-          <img src="./assets/send-icon.svg" />
+          <img src="https://obipranata.github.io/obito-chatBot/assets/send-icon.svg" />
         </button>
       </div>
     </div>
