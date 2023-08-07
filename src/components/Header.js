@@ -4,7 +4,7 @@ const Header = () => {
       <div className="flex text-white gap-[14px] items-center">
         <img src="https://obipranata.github.io/obito-chatBot/assets/obito.jpg" className="rounded-full w-11" />
         <div>
-          <h1 className="text-base">Ada yang bisa dibantu?</h1>
+          <h1 className="text-base">obito chatBot</h1>
           <div className="flex items-center gap-1">
             <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="5" cy="5.60121" r="4.5" fill="#81C784" stroke="white"/>

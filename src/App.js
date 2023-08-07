@@ -70,7 +70,7 @@ function App() {
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
         />
-        <button onClick={submit} disabled={load && (question == '') ? true : false}>
+        <button className={`${load ? 'cursor-wait' : 'cursor-pointer'}`} onClick={submit} disabled={load && (question == '') ? true : false}>
           <img src="https://obipranata.github.io/obito-chatBot/assets/send-icon.svg" />
         </button>
       </div>
