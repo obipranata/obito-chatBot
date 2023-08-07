@@ -12,7 +12,7 @@ const Chat = ({data, question}) => {
         <div className="max-w-11.5 shrink-0">
           <img src="https://obipranata.github.io/obito-chatBot/assets/obito.jpg" className="w-11 rounded-full" />
         </div>
-        <div className="text-[#282828] bg-[#E3E3E3] py-1 rounded-lg px-4">
+        <div className="text-white bg-[#212E35] py-1 rounded-lg px-4">
           <p>{data.answer}</p>
         </div>
       </div>
