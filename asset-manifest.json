@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/obito-chatBot/static/css/main.313d277e.css",
-    "main.js": "/obito-chatBot/static/js/main.6b471851.js",
+    "main.css": "/obito-chatBot/static/css/main.c85c4b65.css",
+    "main.js": "/obito-chatBot/static/js/main.c2a12982.js",
     "static/js/787.887f1396.chunk.js": "/obito-chatBot/static/js/787.887f1396.chunk.js",
     "index.html": "/obito-chatBot/index.html",
-    "main.313d277e.css.map": "/obito-chatBot/static/css/main.313d277e.css.map",
-    "main.6b471851.js.map": "/obito-chatBot/static/js/main.6b471851.js.map",
+    "main.c85c4b65.css.map": "/obito-chatBot/static/css/main.c85c4b65.css.map",
+    "main.c2a12982.js.map": "/obito-chatBot/static/js/main.c2a12982.js.map",
     "787.887f1396.chunk.js.map": "/obito-chatBot/static/js/787.887f1396.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.313d277e.css",
-    "static/js/main.6b471851.js"
+    "static/css/main.c85c4b65.css",
+    "static/js/main.c2a12982.js"
   ]
 }
